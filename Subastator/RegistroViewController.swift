@@ -35,17 +35,33 @@ class RegistroViewController: UIViewController {
         }
         
         if ok == true {
+            
+            var exists = false;
+            
             let key = ref.child("user").childByAutoId().key
             
             print(usuario)
             print(contraseña)
             
-            let post = ["login": usuario,
-                        "password": contraseña]
-            let childUpdates = ["/user/\(key)": post]
-            ref.updateChildValues(childUpdates)
+            userRef.observe(FIRDataEventType.value, with: { (snapshot) in
+                let enumerator = snapshot.children
+                while let rest = enumerator.nextObject() as? FIRDataSnapshot {
+                    let value = rest.value as? NSDictionary
+                    if value?["login"] as? String == usuario {
+                        exists = true
+                    }
+                }
+                
+                if !exists {
+                    let post = ["login": usuario,
+                                "password": contraseña]
+                    let childUpdates = ["/user/\(key)": post]
+                    ref.updateChildValues(childUpdates)
+                }
+                
+            })
+           
         }
-        
         
     }
     

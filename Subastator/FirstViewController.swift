@@ -16,23 +16,27 @@ class FirstViewController: UIViewController {
     var conditionRef: FIRDatabaseReference!
     var userRef: FIRDatabaseReference!
     
+    @IBOutlet weak var usuario: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
     @IBOutlet weak var condition: UILabel!
     @IBAction func login(_ sender: UIButton) {
-        /*let secondViewController: SecondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        self.show(secondViewController, sender: self)*/
+
+        let usuarioUsr = usuario.text!
+        let passwordPsw = password.text!
         
-        conditionRef.setValue("LOGIN")
-    }
-    @IBAction func reg(_ sender: AnyObject) {
-        conditionRef.setValue("REGISTRAR")
-        
-        let key = ref.child("user").childByAutoId().key
-        
-        let post = ["login": "dsad",
-                    "password": "dsad"]
-        let childUpdates = ["/user/\(key)": post]
-        ref.updateChildValues(childUpdates)
-    }
+        userRef.observe(FIRDataEventType.value, with: { (snapshot) in
+            let enumerator = snapshot.children
+            while let rest = enumerator.nextObject() as? FIRDataSnapshot {
+                let value = rest.value as? NSDictionary
+                if (value?["login"] as? String == usuarioUsr && value?["password"] as? String == passwordPsw){
+                    let secondViewController: SecondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+                    self.show(secondViewController, sender: self)
+                }
+            }
+            
+        })
+ }
     
     override func viewDidLoad() {
         super.viewDidLoad()
