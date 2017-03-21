@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1338CD80EC97F5C3534F2465 /* Pods_SubastatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC3F4E652692094A3E3A9B7 /* Pods_SubastatorTests.framework */; };
+		40507130DBD523928473BA02 /* Pods_SubastatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E34001AE795F0B4735FC5F /* Pods_SubastatorUITests.framework */; };
+		9D6E8BCDED3DCBC5CFF5117F /* Pods_Subastator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECE6B97DE3FF01B6DE4D54C /* Pods_Subastator.framework */; };
 		A620FB331E4CF0B4006FE8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB321E4CF0B4006FE8EA /* AppDelegate.swift */; };
 		A620FB351E4CF0B4006FE8EA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB341E4CF0B4006FE8EA /* FirstViewController.swift */; };
 		A620FB371E4CF0B4006FE8EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB361E4CF0B4006FE8EA /* SecondViewController.swift */; };
@@ -15,6 +18,8 @@
 		A620FB3F1E4CF0B4006FE8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A620FB3D1E4CF0B4006FE8EA /* LaunchScreen.storyboard */; };
 		A620FB4A1E4CF0B4006FE8EA /* SubastatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB491E4CF0B4006FE8EA /* SubastatorTests.swift */; };
 		A620FB551E4CF0B4006FE8EA /* SubastatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB541E4CF0B4006FE8EA /* SubastatorUITests.swift */; };
+		A676BC4A1E70792000104624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A676BC491E70792000104624 /* GoogleService-Info.plist */; };
+		A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4088DBDFABC843EE176ED1A7 /* Pods-SubastatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorTests/Pods-SubastatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EC3F4E652692094A3E3A9B7 /* Pods_SubastatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubastatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706F8D3562D468994A0DC8C8 /* Pods-Subastator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subastator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Subastator/Pods-Subastator.debug.xcconfig"; sourceTree = "<group>"; };
+		7ECE6B97DE3FF01B6DE4D54C /* Pods_Subastator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subastator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF2DCCE9AC2C8350669DE90 /* Pods-SubastatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorUITests/Pods-SubastatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98E34001AE795F0B4735FC5F /* Pods_SubastatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubastatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A620FB2F1E4CF0B4006FE8EA /* Subastator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subastator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A620FB321E4CF0B4006FE8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A620FB341E4CF0B4006FE8EA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,11 @@
 		A620FB501E4CF0B4006FE8EA /* SubastatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubastatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A620FB541E4CF0B4006FE8EA /* SubastatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubastatorUITests.swift; sourceTree = "<group>"; };
 		A620FB561E4CF0B4006FE8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A676BC491E70792000104624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		ACD897AD0C171362FD94375E /* Pods-Subastator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subastator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Subastator/Pods-Subastator.release.xcconfig"; sourceTree = "<group>"; };
+		BCB690E594180F928B3DE1FC /* Pods-SubastatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorUITests/Pods-SubastatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF1E23EE2EA174974E01D9D8 /* Pods-SubastatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorTests/Pods-SubastatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6E8BCDED3DCBC5CFF5117F /* Pods_Subastator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1338CD80EC97F5C3534F2465 /* Pods_SubastatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40507130DBD523928473BA02 /* Pods_SubastatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032557B70C761E382A4F30DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ECE6B97DE3FF01B6DE4D54C /* Pods_Subastator.framework */,
+				6EC3F4E652692094A3E3A9B7 /* Pods_SubastatorTests.framework */,
+				98E34001AE795F0B4735FC5F /* Pods_SubastatorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3ED1E93083A5E59F71BE91F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				706F8D3562D468994A0DC8C8 /* Pods-Subastator.debug.xcconfig */,
+				ACD897AD0C171362FD94375E /* Pods-Subastator.release.xcconfig */,
+				FF1E23EE2EA174974E01D9D8 /* Pods-SubastatorTests.debug.xcconfig */,
+				4088DBDFABC843EE176ED1A7 /* Pods-SubastatorTests.release.xcconfig */,
+				7EF2DCCE9AC2C8350669DE90 /* Pods-SubastatorUITests.debug.xcconfig */,
+				BCB690E594180F928B3DE1FC /* Pods-SubastatorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A620FB261E4CF0B4006FE8EA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +125,8 @@
 				A620FB481E4CF0B4006FE8EA /* SubastatorTests */,
 				A620FB531E4CF0B4006FE8EA /* SubastatorUITests */,
 				A620FB301E4CF0B4006FE8EA /* Products */,
+				3ED1E93083A5E59F71BE91F2 /* Pods */,
+				032557B70C761E382A4F30DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +150,8 @@
 				A620FB3B1E4CF0B4006FE8EA /* Assets.xcassets */,
 				A620FB3D1E4CF0B4006FE8EA /* LaunchScreen.storyboard */,
 				A620FB401E4CF0B4006FE8EA /* Info.plist */,
+				A676BC491E70792000104624 /* GoogleService-Info.plist */,
+				A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */,
 			);
 			path = Subastator;
 			sourceTree = "<group>";
@@ -135,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A620FB591E4CF0B4006FE8EA /* Build configuration list for PBXNativeTarget "Subastator" */;
 			buildPhases = (
+				BDA15F061E6CC4815BA0DAD3 /* [CP] Check Pods Manifest.lock */,
 				A620FB2B1E4CF0B4006FE8EA /* Sources */,
 				A620FB2C1E4CF0B4006FE8EA /* Frameworks */,
 				A620FB2D1E4CF0B4006FE8EA /* Resources */,
+				33EC8E97E00D074B48D42E60 /* [CP] Embed Pods Frameworks */,
+				B3A481ABF65F326E093E0F18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A620FB5C1E4CF0B4006FE8EA /* Build configuration list for PBXNativeTarget "SubastatorTests" */;
 			buildPhases = (
+				5131F78F7F00E242F7428CC3 /* [CP] Check Pods Manifest.lock */,
 				A620FB411E4CF0B4006FE8EA /* Sources */,
 				A620FB421E4CF0B4006FE8EA /* Frameworks */,
 				A620FB431E4CF0B4006FE8EA /* Resources */,
+				0FF0FA816B9F501EDDF685D4 /* [CP] Embed Pods Frameworks */,
+				735A2FFCDB45BE6326ED4355 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A620FB5F1E4CF0B4006FE8EA /* Build configuration list for PBXNativeTarget "SubastatorUITests" */;
 			buildPhases = (
+				352CB599B8071B49D35E57DA /* [CP] Check Pods Manifest.lock */,
 				A620FB4C1E4CF0B4006FE8EA /* Sources */,
 				A620FB4D1E4CF0B4006FE8EA /* Frameworks */,
 				A620FB4E1E4CF0B4006FE8EA /* Resources */,
+				6CA338C614888765C9EA3853 /* [CP] Embed Pods Frameworks */,
+				85215A59620CCEBB9DEB50BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A620FB3F1E4CF0B4006FE8EA /* LaunchScreen.storyboard in Resources */,
+				A676BC4A1E70792000104624 /* GoogleService-Info.plist in Resources */,
 				A620FB3C1E4CF0B4006FE8EA /* Assets.xcassets in Resources */,
 				A620FB3A1E4CF0B4006FE8EA /* Main.storyboard in Resources */,
 			);
@@ -257,12 +313,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FF0FA816B9F501EDDF685D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SubastatorTests/Pods-SubastatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33EC8E97E00D074B48D42E60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Subastator/Pods-Subastator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		352CB599B8071B49D35E57DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5131F78F7F00E242F7428CC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA338C614888765C9EA3853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SubastatorUITests/Pods-SubastatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		735A2FFCDB45BE6326ED4355 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SubastatorTests/Pods-SubastatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85215A59620CCEBB9DEB50BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SubastatorUITests/Pods-SubastatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A481ABF65F326E093E0F18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Subastator/Pods-Subastator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDA15F061E6CC4815BA0DAD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A620FB2B1E4CF0B4006FE8EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A620FB371E4CF0B4006FE8EA /* SecondViewController.swift in Sources */,
+				A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */,
 				A620FB331E4CF0B4006FE8EA /* AppDelegate.swift in Sources */,
 				A620FB351E4CF0B4006FE8EA /* FirstViewController.swift in Sources */,
 			);
@@ -414,6 +609,7 @@
 		};
 		A620FB5A1E4CF0B4006FE8EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706F8D3562D468994A0DC8C8 /* Pods-Subastator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Subastator/Info.plist;
@@ -426,6 +622,7 @@
 		};
 		A620FB5B1E4CF0B4006FE8EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD897AD0C171362FD94375E /* Pods-Subastator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Subastator/Info.plist;
@@ -438,6 +635,7 @@
 		};
 		A620FB5D1E4CF0B4006FE8EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1E23EE2EA174974E01D9D8 /* Pods-SubastatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +650,7 @@
 		};
 		A620FB5E1E4CF0B4006FE8EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4088DBDFABC843EE176ED1A7 /* Pods-SubastatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +665,7 @@
 		};
 		A620FB601E4CF0B4006FE8EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF2DCCE9AC2C8350669DE90 /* Pods-SubastatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SubastatorUITests/Info.plist;
@@ -479,6 +679,7 @@
 		};
 		A620FB611E4CF0B4006FE8EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB690E594180F928B3DE1FC /* Pods-SubastatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SubastatorUITests/Info.plist;
@@ -509,6 +710,7 @@
 				A620FB5B1E4CF0B4006FE8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A620FB5C1E4CF0B4006FE8EA /* Build configuration list for PBXNativeTarget "SubastatorTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +719,7 @@
 				A620FB5E1E4CF0B4006FE8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A620FB5F1E4CF0B4006FE8EA /* Build configuration list for PBXNativeTarget "SubastatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +728,7 @@
 				A620FB611E4CF0B4006FE8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
