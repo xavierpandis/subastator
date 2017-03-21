@@ -13,7 +13,6 @@ var ref: FIRDatabaseReference!
 
 class FirstViewController: UIViewController {
     
-    var conditionRef: FIRDatabaseReference!
     var userRef: FIRDatabaseReference!
     
     @IBOutlet weak var usuario: UITextField!
