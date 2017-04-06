@@ -18,6 +18,17 @@ class RegistroViewController: UIViewController {
     @IBAction func btnCrearCuenta(_ sender: AnyObject) {
         let usuario:String = inputUsuario.text!
         let contraseña:String = inputContraseña.text!
+        
+        if(usuario == "" || contraseña == ""){
+            self.inputUsuario.text = ""
+            self.inputContraseña.text = ""
+            
+            let alertController = UIAlertController(title: "¡Atención!", message:
+                "Asegurate de rellenar los dos campos.", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default,handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
         var ok = false
         
         var exists = false;
@@ -38,22 +49,26 @@ class RegistroViewController: UIViewController {
                 }
             }
             
-            if !exists {
-                let post = ["login": usuario,
-                            "password": contraseña]
-                let childUpdates = ["\(key)": post]
-                self.userRef.updateChildValues(childUpdates)
-                self.userRef.removeObserver(withHandle: handle)
-            } else {
-                let alertController = UIAlertController(title: "¡Atención!", message:
-                    "Ya existe un usuario con el mismo nombre, por favor escoge otro.", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default,handler: nil))
-                self.present(alertController, animated: true, completion: nil)
-                
-                self.inputUsuario.text = ""
-                self.inputContraseña.text = ""
+            if(count==0){
+                if !exists {
+                    let post = ["login": usuario,
+                                "password": contraseña]
+                    let childUpdates = ["\(key)": post]
+                    self.userRef.updateChildValues(childUpdates)
+                    self.userRef.removeObserver(withHandle: handle)
+                    count = count+1
+                    
+                } else {
+                    let alertController = UIAlertController(title: "¡Atención!", message:
+                        "Ya existe un usuario con el mismo nombre, por favor escoge otro.", preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default,handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                    self.inputUsuario.text = ""
+                    self.inputContraseña.text = ""
+                    count = count+1
+                }
             }
-            
         })
     }
     

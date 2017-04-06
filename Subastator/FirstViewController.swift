@@ -33,9 +33,8 @@ class FirstViewController: UIViewController {
                     self.show(secondViewController, sender: self)
                 }
             }
-            
         })
- }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
