@@ -10,7 +10,7 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="PanelViewController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -18,6 +18,48 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtX-Mo-uHn">
+                                <frame key="frameInset" minX="119" minY="588" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cerrar sesion"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbH-bi-AvN">
+                                <frame key="frameInset" minX="145" minY="72" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Javier Bono" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lc1-ze-Zki">
+                                <frame key="frameInset" minX="95" minY="101" width="185" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i0-xa-Ft9">
+                                <frame key="frameInset" minX="108" minY="280" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Subastar objeto"/>
+                                <connections>
+                                    <segue destination="E8F-6p-ZRc" kind="show" id="l63-bE-DHQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxK-Hf-0hI">
+                                <frame key="frameInset" minX="130" minY="318" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ver subastas"/>
+                                <connections>
+                                    <segue destination="PkD-s8-JkD" kind="showDetail" id="qbe-bd-4i9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBa-Cp-uaI">
+                                <frame key="frameInset" minX="90" minY="356" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ver subastas ganadas"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
@@ -25,6 +67,169 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1688.8" y="-320.68965517241384"/>
+        </scene>
+        <!--Lista Subastas Table View Controller-->
+        <scene sceneID="90F-XH-c8U">
+            <objects>
+                <tableViewController id="PkD-s8-JkD" customClass="ListaSubastasTableViewController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oyd-Nz-JeR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cPo-mc-0fF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cPo-mc-0fF" id="KTt-Cu-8yS">
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PkD-s8-JkD" id="ZfV-k5-jY2"/>
+                            <outlet property="delegate" destination="PkD-s8-JkD" id="qah-cA-QMx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAn-jV-M9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2466" y="-965"/>
+        </scene>
+        <!--Creando subasta-->
+        <scene sceneID="RA8-6Y-9eC">
+            <objects>
+                <viewController id="E8F-6p-ZRc" customClass="CrearSubastaViewController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xa3-bT-aWo"/>
+                        <viewControllerLayoutGuide type="bottom" id="b7e-tz-q8J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C6j-YQ-Gdd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de la subasta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvD-fK-Pbz">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="2At-ri-B20"/>
+                                    <constraint firstAttribute="height" constant="30" id="sQF-n6-vxF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Objeto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tto-RF-dE3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cZa-ce-Nlf"/>
+                                    <constraint firstAttribute="width" constant="185" id="tk2-hB-U9x"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-hf-CjM">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="U53-P4-65j"/>
+                                    <constraint firstAttribute="height" constant="128" id="w4A-c4-b46"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objeto a subastar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxQ-Qg-e8c">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0Wb-SE-8cT"/>
+                                    <constraint firstAttribute="width" constant="172" id="KOC-59-2XA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre la subasta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjr-fE-MSb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GBR-NC-kQx"/>
+                                    <constraint firstAttribute="width" constant="182" id="R0t-uZ-2ET"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion del producto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB9-x0-p6c">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3Ng-SA-ctG"/>
+                                    <constraint firstAttribute="width" constant="240" id="dYq-MT-UyO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio salida" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xR-AT-jjN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="B62-if-eLD"/>
+                                    <constraint firstAttribute="height" constant="21" id="VcD-6i-LUm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="300€" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-u0-RAM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1QY-zu-gAk"/>
+                                    <constraint firstAttribute="width" constant="143" id="deF-Ch-nw2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqJ-qC-KGY">
+                                <color key="backgroundColor" red="0.0" green="0.36862745098039218" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="50Q-6B-ukC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Empezar subasta">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="crearSubasta:" destination="E8F-6p-ZRc" eventType="touchUpInside" id="igw-1X-uSN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fjr-fE-MSb" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="3js-QX-JVf"/>
+                            <constraint firstItem="tto-RF-dE3" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="C5C-Qa-G1Q"/>
+                            <constraint firstItem="b7e-tz-q8J" firstAttribute="top" secondItem="GqJ-qC-KGY" secondAttribute="bottom" id="DS1-gm-ocm"/>
+                            <constraint firstItem="tto-RF-dE3" firstAttribute="top" secondItem="HxQ-Qg-e8c" secondAttribute="bottom" constant="8" id="K24-Bp-tr6"/>
+                            <constraint firstItem="GqJ-qC-KGY" firstAttribute="leading" secondItem="C6j-YQ-Gdd" secondAttribute="leading" id="LLa-zm-err"/>
+                            <constraint firstItem="bB9-x0-p6c" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="Ld8-08-ls6"/>
+                            <constraint firstItem="Qpo-hf-CjM" firstAttribute="top" secondItem="bB9-x0-p6c" secondAttribute="bottom" constant="8" id="Mf5-ZZ-L8O"/>
+                            <constraint firstItem="Fjr-fE-MSb" firstAttribute="top" secondItem="xa3-bT-aWo" secondAttribute="bottom" constant="62" id="Qsv-vN-1hb"/>
+                            <constraint firstItem="Qpo-hf-CjM" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="TSV-fk-b5a"/>
+                            <constraint firstItem="HxQ-Qg-e8c" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="VMi-br-V6C"/>
+                            <constraint firstItem="NvD-fK-Pbz" firstAttribute="top" secondItem="Fjr-fE-MSb" secondAttribute="bottom" constant="8" id="YjM-VR-pXi"/>
+                            <constraint firstItem="bB9-x0-p6c" firstAttribute="top" secondItem="tto-RF-dE3" secondAttribute="bottom" constant="11" id="egw-sQ-pwH"/>
+                            <constraint firstAttribute="trailing" secondItem="GqJ-qC-KGY" secondAttribute="trailing" id="kIk-m3-SuX"/>
+                            <constraint firstItem="4xR-AT-jjN" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="o00-u9-9Dm"/>
+                            <constraint firstItem="fj5-u0-RAM" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="os0-IT-qnY"/>
+                            <constraint firstItem="fj5-u0-RAM" firstAttribute="top" secondItem="4xR-AT-jjN" secondAttribute="bottom" constant="8" id="qpQ-S7-yuK"/>
+                            <constraint firstItem="HxQ-Qg-e8c" firstAttribute="top" secondItem="NvD-fK-Pbz" secondAttribute="bottom" constant="8" id="s6t-NS-Gyd"/>
+                            <constraint firstItem="NvD-fK-Pbz" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="sJP-5w-xjL"/>
+                            <constraint firstItem="GqJ-qC-KGY" firstAttribute="centerX" secondItem="C6j-YQ-Gdd" secondAttribute="centerX" id="wXQ-A4-Ova"/>
+                            <constraint firstItem="4xR-AT-jjN" firstAttribute="top" secondItem="Qpo-hf-CjM" secondAttribute="bottom" constant="8" id="zUX-op-4n7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Creando subasta" id="OPo-7y-vet"/>
+                    <connections>
+                        <outlet property="descripcionProducto" destination="Qpo-hf-CjM" id="bVB-Uz-0vW"/>
+                        <outlet property="nombreSubasta" destination="NvD-fK-Pbz" id="xre-j7-hZ5"/>
+                        <outlet property="objeto" destination="tto-RF-dE3" id="HiE-IH-GCW"/>
+                        <outlet property="precioMinimo" destination="fj5-u0-RAM" id="BdE-mE-Dd1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTR-Fb-9sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2647" y="-205"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -62,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3567.1999999999998" y="359.37031484257875"/>
+            <point key="canvasLocation" x="1689" y="411"/>
         </scene>
         <!--Creando cuenta-->
         <scene sceneID="B0u-ts-mDt">
@@ -77,7 +282,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGh-fa-uJM">
-                                <color key="backgroundColor" red="0.0" green="0.36875027249999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.36862745098039218" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="hQv-0T-tK7"/>
                                 </constraints>
@@ -224,6 +429,14 @@
                                     <segue destination="Y7H-gK-vJZ" kind="show" id="LE3-Qf-M3e"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-F3-Xzp">
+                                <frame key="frameInset" minX="162" minY="72" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="Cr3-eD-NdD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -288,4 +501,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Ef-wQ-UkV"/>
+    </inferredMetricsTieBreakers>
 </document>

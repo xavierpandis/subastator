@@ -20,6 +20,9 @@
 		A620FB551E4CF0B4006FE8EA /* SubastatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB541E4CF0B4006FE8EA /* SubastatorUITests.swift */; };
 		A676BC4A1E70792000104624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A676BC491E70792000104624 /* GoogleService-Info.plist */; };
 		A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */; };
+		BBBE89CA1E96B6AC00F9E51B /* CrearSubastaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */; };
+		BBBE89CB1E96B6AC00F9E51B /* ListaSubastasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C81E96B6AC00F9E51B /* ListaSubastasTableViewController.swift */; };
+		BBBE89CC1E96B6AC00F9E51B /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C91E96B6AC00F9E51B /* PanelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		A676BC491E70792000104624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		ACD897AD0C171362FD94375E /* Pods-Subastator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subastator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Subastator/Pods-Subastator.release.xcconfig"; sourceTree = "<group>"; };
+		BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrearSubastaViewController.swift; sourceTree = "<group>"; };
+		BBBE89C81E96B6AC00F9E51B /* ListaSubastasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaSubastasTableViewController.swift; sourceTree = "<group>"; };
+		BBBE89C91E96B6AC00F9E51B /* PanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
 		BCB690E594180F928B3DE1FC /* Pods-SubastatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorUITests/Pods-SubastatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FF1E23EE2EA174974E01D9D8 /* Pods-SubastatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorTests/Pods-SubastatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +149,9 @@
 		A620FB311E4CF0B4006FE8EA /* Subastator */ = {
 			isa = PBXGroup;
 			children = (
+				BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */,
+				BBBE89C81E96B6AC00F9E51B /* ListaSubastasTableViewController.swift */,
+				BBBE89C91E96B6AC00F9E51B /* PanelViewController.swift */,
 				A620FB321E4CF0B4006FE8EA /* AppDelegate.swift */,
 				A620FB341E4CF0B4006FE8EA /* FirstViewController.swift */,
 				A620FB361E4CF0B4006FE8EA /* SecondViewController.swift */,
@@ -456,8 +465,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBE89CC1E96B6AC00F9E51B /* PanelViewController.swift in Sources */,
 				A620FB371E4CF0B4006FE8EA /* SecondViewController.swift in Sources */,
+				BBBE89CB1E96B6AC00F9E51B /* ListaSubastasTableViewController.swift in Sources */,
 				A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */,
+				BBBE89CA1E96B6AC00F9E51B /* CrearSubastaViewController.swift in Sources */,
 				A620FB331E4CF0B4006FE8EA /* AppDelegate.swift in Sources */,
 				A620FB351E4CF0B4006FE8EA /* FirstViewController.swift in Sources */,
 			);
