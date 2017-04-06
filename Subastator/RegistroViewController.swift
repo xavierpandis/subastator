@@ -19,55 +19,47 @@ class RegistroViewController: UIViewController {
         let usuario:String = inputUsuario.text!
         let contraseña:String = inputContraseña.text!
         var ok = false
-        if (usuario != nil || usuario != "") {
-            print("Usuario: "+usuario)
-            ok = true
-        }
-        else {
-          ok = false
-        }
         
-        if(contraseña != nil || contraseña != ""){
-           print("Contraseña: "+contraseña)
-            ok = true
-        }else{
-            ok = false
-        }
+        var exists = false;
+        var count = 0;
+        let key = ref.child("user").childByAutoId().key
         
-        if ok == true {
-            
-            var exists = false;
-            
-            let key = ref.child("user").childByAutoId().key
-            
-            print(usuario)
-            print(contraseña)
-            
-            userRef.observe(FIRDataEventType.value, with: { (snapshot) in
-                let enumerator = snapshot.children
-                while let rest = enumerator.nextObject() as? FIRDataSnapshot {
-                    let value = rest.value as? NSDictionary
-                    if value?["login"] as? String == usuario {
-                        exists = true
-                    }
+        print(usuario)
+        print(contraseña)
+        
+        var handle: UInt = 0
+        
+        handle = userRef.observe(FIRDataEventType.value, with: { (snapshot) in
+            let enumerator = snapshot.children
+            while let rest = enumerator.nextObject() as? FIRDataSnapshot {
+                let value = rest.value as? NSDictionary
+                if value?["login"] as? String == usuario {
+                    exists = true
                 }
+            }
+            
+            if !exists {
+                let post = ["login": usuario,
+                            "password": contraseña]
+                let childUpdates = ["\(key)": post]
+                self.userRef.updateChildValues(childUpdates)
+                self.userRef.removeObserver(withHandle: handle)
+            } else {
+                let alertController = UIAlertController(title: "¡Atención!", message:
+                    "Ya existe un usuario con el mismo nombre, por favor escoge otro.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default,handler: nil))
+                self.present(alertController, animated: true, completion: nil)
                 
-                if !exists {
-                    let post = ["login": usuario,
-                                "password": contraseña]
-                    let childUpdates = ["/user/\(key)": post]
-                    ref.updateChildValues(childUpdates)
-                }
-                
-            })
-           
-        }
-        
+                self.inputUsuario.text = ""
+                self.inputContraseña.text = ""
+            }
+            
+        })
     }
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
@@ -75,13 +67,7 @@ class RegistroViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         userRef = ref.child("user")
-        userRef.observe(FIRDataEventType.value, with: { (snapshot) in
-            let value = snapshot.value as? NSDictionary
-            var login = value?["login"] as? String ?? ""
-            var pass = value?["password"] as? String ?? ""
-            print("login " + login + ", password "+pass)
-            //self.condition.text = postDict as! String?
-        })
+        
         
     }
 
