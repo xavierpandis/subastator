@@ -25,12 +25,14 @@ class CrearSubastaViewController: UIViewController {
         let objeto_subasta:String = objeto.text!
         let descripcion_producto_subasta:String = descripcionProducto.text
         let precio_minimo_subasta:String = precioMinimo.text!
+        let credentials = UserDefaults.standard
+        let creator = credentials.string(forKey: userCredentials.usr)
         
         let subasta = ["nombre_subasta": nombre_subasta,
                        "objeto_subasta": objeto_subasta,
                        "descripcion_subasta": descripcion_producto_subasta,
                        "precio_minimo_subasta": precio_minimo_subasta,
-                       "creador": "Javier Bono"]
+                       "creador": creator]
         
         subastasRef.observe(FIRDataEventType.value, with: { (snapshot) in
             let childUpdates = ["/subastas/\(key)": subasta]
@@ -38,6 +40,8 @@ class CrearSubastaViewController: UIViewController {
             
         })
 
+        let panelViewController: PanelViewController = self.storyboard?.instantiateViewController(withIdentifier: "PanelViewController") as! PanelViewController
+        self.show(panelViewController, sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

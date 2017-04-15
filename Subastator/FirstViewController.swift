@@ -11,6 +11,10 @@ import FirebaseDatabase
 
 var ref: FIRDatabaseReference!
 
+struct userCredentials {
+    static let usr = "username"
+}
+
 class FirstViewController: UIViewController {
     
     var userRef: FIRDatabaseReference!
@@ -29,11 +33,14 @@ class FirstViewController: UIViewController {
             while let rest = enumerator.nextObject() as? FIRDataSnapshot {
                 let value = rest.value as? NSDictionary
                 if (value?["login"] as? String == usuarioUsr && value?["password"] as? String == passwordPsw){
-                    let secondViewController: SecondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-                    self.show(secondViewController, sender: self)
+                    let panelViewController: PanelViewController = self.storyboard?.instantiateViewController(withIdentifier: "PanelViewController") as! PanelViewController
+                    self.show(panelViewController, sender: self)
                 }
             }
         })
+        
+        let userSession = UserDefaults.standard
+        userSession.set(usuarioUsr, forKey: userCredentials.usr)
     }
     
     override func viewDidLoad() {

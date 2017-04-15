@@ -20,9 +20,6 @@ class RegistroViewController: UIViewController {
         let contraseña:String = inputContraseña.text!
         
         if(usuario == "" || contraseña == ""){
-            self.inputUsuario.text = ""
-            self.inputContraseña.text = ""
-            
             let alertController = UIAlertController(title: "¡Atención!", message:
                 "Asegurate de rellenar los dos campos.", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default,handler: nil))
@@ -57,6 +54,12 @@ class RegistroViewController: UIViewController {
                     self.userRef.updateChildValues(childUpdates)
                     self.userRef.removeObserver(withHandle: handle)
                     count = count+1
+                    
+                    let userSession = UserDefaults.standard
+                    userSession.set(usuario, forKey: userCredentials.usr)
+                    
+                    let panelViewController: PanelViewController = self.storyboard?.instantiateViewController(withIdentifier: "PanelViewController") as! PanelViewController
+                    self.show(panelViewController, sender: self)
                     
                 } else {
                     let alertController = UIAlertController(title: "¡Atención!", message:
