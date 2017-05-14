@@ -10,9 +10,14 @@ import UIKit
 
 class PanelViewController: UIViewController {
 
+    @IBOutlet weak var userName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let credentials = UserDefaults.standard
+        let userlogged = credentials.string(forKey: userCredentials.usr)
 
+        userName.text = userlogged
         // Do any additional setup after loading the view.
     }
 

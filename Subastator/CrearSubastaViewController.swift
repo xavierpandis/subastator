@@ -24,7 +24,7 @@ class CrearSubastaViewController: UIViewController {
         let nombre_subasta:String = nombreSubasta.text!
         let objeto_subasta:String = objeto.text!
         let descripcion_producto_subasta:String = descripcionProducto.text
-        let precio_minimo_subasta:String = precioMinimo.text!
+        let precio_minimo_subasta:String = precioMinimo.text! + " €"
         let credentials = UserDefaults.standard
         let creator = credentials.string(forKey: userCredentials.usr)
         

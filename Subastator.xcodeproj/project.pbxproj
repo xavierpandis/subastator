@@ -13,16 +13,19 @@
 		A620FB331E4CF0B4006FE8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB321E4CF0B4006FE8EA /* AppDelegate.swift */; };
 		A620FB351E4CF0B4006FE8EA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB341E4CF0B4006FE8EA /* FirstViewController.swift */; };
 		A620FB371E4CF0B4006FE8EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB361E4CF0B4006FE8EA /* SecondViewController.swift */; };
-		A620FB3A1E4CF0B4006FE8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A620FB381E4CF0B4006FE8EA /* Main.storyboard */; };
 		A620FB3C1E4CF0B4006FE8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A620FB3B1E4CF0B4006FE8EA /* Assets.xcassets */; };
 		A620FB3F1E4CF0B4006FE8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A620FB3D1E4CF0B4006FE8EA /* LaunchScreen.storyboard */; };
 		A620FB4A1E4CF0B4006FE8EA /* SubastatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB491E4CF0B4006FE8EA /* SubastatorTests.swift */; };
 		A620FB551E4CF0B4006FE8EA /* SubastatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A620FB541E4CF0B4006FE8EA /* SubastatorUITests.swift */; };
 		A676BC4A1E70792000104624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A676BC491E70792000104624 /* GoogleService-Info.plist */; };
 		A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */; };
+		BB0495681EAE841100F56AED /* CellMisSubastasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */; };
+		BB9044521EC8D4F600C0822C /* VerSubastasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9044511EC8D4F600C0822C /* VerSubastasController.swift */; };
+		BB9044561EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */; };
 		BBBE89CA1E96B6AC00F9E51B /* CrearSubastaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */; };
-		BBBE89CB1E96B6AC00F9E51B /* ListaSubastasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C81E96B6AC00F9E51B /* ListaSubastasTableViewController.swift */; };
+		BBBE89CB1E96B6AC00F9E51B /* MisSubastasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C81E96B6AC00F9E51B /* MisSubastasController.swift */; };
 		BBBE89CC1E96B6AC00F9E51B /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C91E96B6AC00F9E51B /* PanelViewController.swift */; };
+		BBF534751EC4D93700DF605A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF534731EC4D93700DF605A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +56,6 @@
 		A620FB321E4CF0B4006FE8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A620FB341E4CF0B4006FE8EA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A620FB361E4CF0B4006FE8EA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		A620FB391E4CF0B4006FE8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A620FB3B1E4CF0B4006FE8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A620FB3E1E4CF0B4006FE8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A620FB401E4CF0B4006FE8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,9 +68,13 @@
 		A676BC491E70792000104624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		ACD897AD0C171362FD94375E /* Pods-Subastator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subastator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Subastator/Pods-Subastator.release.xcconfig"; sourceTree = "<group>"; };
+		BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellMisSubastasTableViewCell.swift; sourceTree = "<group>"; };
+		BB9044511EC8D4F600C0822C /* VerSubastasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerSubastasController.swift; sourceTree = "<group>"; };
+		BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSubastasTaleViewCell.swift; sourceTree = "<group>"; };
 		BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrearSubastaViewController.swift; sourceTree = "<group>"; };
-		BBBE89C81E96B6AC00F9E51B /* ListaSubastasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaSubastasTableViewController.swift; sourceTree = "<group>"; };
+		BBBE89C81E96B6AC00F9E51B /* MisSubastasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MisSubastasController.swift; sourceTree = "<group>"; };
 		BBBE89C91E96B6AC00F9E51B /* PanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
+		BBF534741EC4D93700DF605A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCB690E594180F928B3DE1FC /* Pods-SubastatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorUITests/Pods-SubastatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FF1E23EE2EA174974E01D9D8 /* Pods-SubastatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubastatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SubastatorTests/Pods-SubastatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,17 +156,20 @@
 			isa = PBXGroup;
 			children = (
 				BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */,
-				BBBE89C81E96B6AC00F9E51B /* ListaSubastasTableViewController.swift */,
+				BBBE89C81E96B6AC00F9E51B /* MisSubastasController.swift */,
 				BBBE89C91E96B6AC00F9E51B /* PanelViewController.swift */,
 				A620FB321E4CF0B4006FE8EA /* AppDelegate.swift */,
 				A620FB341E4CF0B4006FE8EA /* FirstViewController.swift */,
 				A620FB361E4CF0B4006FE8EA /* SecondViewController.swift */,
-				A620FB381E4CF0B4006FE8EA /* Main.storyboard */,
+				BBF534731EC4D93700DF605A /* Main.storyboard */,
 				A620FB3B1E4CF0B4006FE8EA /* Assets.xcassets */,
 				A620FB3D1E4CF0B4006FE8EA /* LaunchScreen.storyboard */,
 				A620FB401E4CF0B4006FE8EA /* Info.plist */,
 				A676BC491E70792000104624 /* GoogleService-Info.plist */,
 				A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */,
+				BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */,
+				BB9044511EC8D4F600C0822C /* VerSubastasController.swift */,
+				BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */,
 			);
 			path = Subastator;
 			sourceTree = "<group>";
@@ -260,6 +269,7 @@
 				TargetAttributes = {
 					A620FB2E1E4CF0B4006FE8EA = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 267H5M3PZB;
 						ProvisioningStyle = Automatic;
 					};
 					A620FB441E4CF0B4006FE8EA = {
@@ -302,7 +312,7 @@
 				A620FB3F1E4CF0B4006FE8EA /* LaunchScreen.storyboard in Resources */,
 				A676BC4A1E70792000104624 /* GoogleService-Info.plist in Resources */,
 				A620FB3C1E4CF0B4006FE8EA /* Assets.xcassets in Resources */,
-				A620FB3A1E4CF0B4006FE8EA /* Main.storyboard in Resources */,
+				BBF534751EC4D93700DF605A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +477,10 @@
 			files = (
 				BBBE89CC1E96B6AC00F9E51B /* PanelViewController.swift in Sources */,
 				A620FB371E4CF0B4006FE8EA /* SecondViewController.swift in Sources */,
-				BBBE89CB1E96B6AC00F9E51B /* ListaSubastasTableViewController.swift in Sources */,
+				BB9044561EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift in Sources */,
+				BB9044521EC8D4F600C0822C /* VerSubastasController.swift in Sources */,
+				BBBE89CB1E96B6AC00F9E51B /* MisSubastasController.swift in Sources */,
+				BB0495681EAE841100F56AED /* CellMisSubastasTableViewCell.swift in Sources */,
 				A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */,
 				BBBE89CA1E96B6AC00F9E51B /* CrearSubastaViewController.swift in Sources */,
 				A620FB331E4CF0B4006FE8EA /* AppDelegate.swift in Sources */,
@@ -507,20 +520,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A620FB381E4CF0B4006FE8EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A620FB391E4CF0B4006FE8EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A620FB3D1E4CF0B4006FE8EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A620FB3E1E4CF0B4006FE8EA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BBF534731EC4D93700DF605A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBF534741EC4D93700DF605A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -624,6 +637,7 @@
 			baseConfigurationReference = 706F8D3562D468994A0DC8C8 /* Pods-Subastator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 267H5M3PZB;
 				INFOPLIST_FILE = Subastator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pandisbono.Subastator;
@@ -637,6 +651,7 @@
 			baseConfigurationReference = ACD897AD0C171362FD94375E /* Pods-Subastator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 267H5M3PZB;
 				INFOPLIST_FILE = Subastator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pandisbono.Subastator;
