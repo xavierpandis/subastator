@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jaV-w3-bBA" id="Jkc-SR-VxN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr9-IN-vFn">
@@ -59,6 +59,7 @@
                                     <outlet property="estado" destination="VMC-ZZ-Gwc" id="jHb-mY-Jqx"/>
                                     <outlet property="nombre" destination="fr9-IN-vFn" id="6db-2x-l9v"/>
                                     <outlet property="precio" destination="ZXY-Lr-16P" id="vGY-kk-Lgr"/>
+                                    <segue destination="Fze-FA-2g9" kind="showDetail" id="8gU-pH-2lR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -73,7 +74,67 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5B-gY-QHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="-1576"/>
+            <point key="canvasLocation" x="1567" y="-1638"/>
+        </scene>
+        <!--Subasta Detail Controller-->
+        <scene sceneID="lFO-Pb-93f">
+            <objects>
+                <viewController id="Fze-FA-2g9" customClass="SubastaDetailController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bIh-iv-4qk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lje-ES-GN9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YyC-Kf-KYW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-eL-KIX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRf-ye-ZUj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmh-m7-Ktd">
+                                                <rect key="frame" x="164" y="924" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hC9-0b-j2B">
+                                                <rect key="frame" x="164" y="43" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="hC9-0b-j2B" firstAttribute="top" secondItem="NRf-ye-ZUj" secondAttribute="top" constant="20" id="6MU-tD-GQP"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xmh-m7-Ktd" secondAttribute="bottom" constant="20" id="JmZ-QS-uAH"/>
+                                            <constraint firstItem="Xmh-m7-Ktd" firstAttribute="centerX" secondItem="NRf-ye-ZUj" secondAttribute="centerX" id="Mio-ra-XT9"/>
+                                            <constraint firstAttribute="height" constant="1000" id="m8O-3Z-gY1"/>
+                                            <constraint firstItem="hC9-0b-j2B" firstAttribute="centerX" secondItem="NRf-ye-ZUj" secondAttribute="centerX" id="xzA-H8-Q4p"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NRf-ye-ZUj" secondAttribute="trailing" id="VGk-hD-UnI"/>
+                                    <constraint firstItem="NRf-ye-ZUj" firstAttribute="leading" secondItem="xVc-eL-KIX" secondAttribute="leading" id="frp-pO-Wma"/>
+                                    <constraint firstItem="NRf-ye-ZUj" firstAttribute="top" secondItem="xVc-eL-KIX" secondAttribute="top" id="txP-rM-0DL"/>
+                                    <constraint firstAttribute="bottom" secondItem="NRf-ye-ZUj" secondAttribute="bottom" id="vwY-b9-Rbb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xVc-eL-KIX" secondAttribute="trailing" id="GXN-Im-0Y9"/>
+                            <constraint firstItem="xVc-eL-KIX" firstAttribute="leading" secondItem="YyC-Kf-KYW" secondAttribute="leading" id="Ldn-Nz-7yi"/>
+                            <constraint firstItem="xVc-eL-KIX" firstAttribute="top" secondItem="YyC-Kf-KYW" secondAttribute="top" id="VVz-EJ-Wtc"/>
+                            <constraint firstItem="Lje-ES-GN9" firstAttribute="top" secondItem="xVc-eL-KIX" secondAttribute="bottom" id="bTW-68-XFq"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONX-fq-MQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3304.8000000000002" y="-2114.8425787106448"/>
         </scene>
         <!--First-->
         <scene sceneID="hNz-n2-bh7">

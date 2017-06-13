@@ -20,6 +20,8 @@
 		A676BC4A1E70792000104624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A676BC491E70792000104624 /* GoogleService-Info.plist */; };
 		A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */; };
 		BB0495681EAE841100F56AED /* CellMisSubastasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */; };
+		BB121F0F1ED60187009CC20C /* SubastaDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB121F0E1ED60187009CC20C /* SubastaDetailController.swift */; };
+		BB22EE7F1ED72EE6002ECB8B /* Subasta.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22EE7E1ED72EE6002ECB8B /* Subasta.swift */; };
 		BB9044521EC8D4F600C0822C /* VerSubastasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9044511EC8D4F600C0822C /* VerSubastasController.swift */; };
 		BB9044561EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */; };
 		BBBE89CA1E96B6AC00F9E51B /* CrearSubastaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */; };
@@ -69,6 +71,8 @@
 		A6FE57331E7B07A300B494D3 /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		ACD897AD0C171362FD94375E /* Pods-Subastator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subastator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Subastator/Pods-Subastator.release.xcconfig"; sourceTree = "<group>"; };
 		BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellMisSubastasTableViewCell.swift; sourceTree = "<group>"; };
+		BB121F0E1ED60187009CC20C /* SubastaDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubastaDetailController.swift; sourceTree = "<group>"; };
+		BB22EE7E1ED72EE6002ECB8B /* Subasta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subasta.swift; sourceTree = "<group>"; };
 		BB9044511EC8D4F600C0822C /* VerSubastasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerSubastasController.swift; sourceTree = "<group>"; };
 		BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSubastasTaleViewCell.swift; sourceTree = "<group>"; };
 		BBBE89C71E96B6AC00F9E51B /* CrearSubastaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrearSubastaViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */,
 				BB9044511EC8D4F600C0822C /* VerSubastasController.swift */,
 				BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */,
+				BB121F0E1ED60187009CC20C /* SubastaDetailController.swift */,
+				BB22EE7E1ED72EE6002ECB8B /* Subasta.swift */,
 			);
 			path = Subastator;
 			sourceTree = "<group>";
@@ -482,8 +488,10 @@
 				BBBE89CB1E96B6AC00F9E51B /* MisSubastasController.swift in Sources */,
 				BB0495681EAE841100F56AED /* CellMisSubastasTableViewCell.swift in Sources */,
 				A6FE57341E7B07A300B494D3 /* RegistroViewController.swift in Sources */,
+				BB22EE7F1ED72EE6002ECB8B /* Subasta.swift in Sources */,
 				BBBE89CA1E96B6AC00F9E51B /* CrearSubastaViewController.swift in Sources */,
 				A620FB331E4CF0B4006FE8EA /* AppDelegate.swift in Sources */,
+				BB121F0F1ED60187009CC20C /* SubastaDetailController.swift in Sources */,
 				A620FB351E4CF0B4006FE8EA /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
