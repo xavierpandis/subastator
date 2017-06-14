@@ -172,6 +172,17 @@
                                                     <action selector="crearSubasta:" destination="E8F-6p-ZRc" eventType="touchUpInside" id="i46-je-L7c"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhF-5w-wHl">
+                                                <rect key="frame" x="8" y="12" width="47" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="CoG-MT-PW3"/>
+                                                    <constraint firstAttribute="height" constant="35" id="ufl-Hp-juz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="back-arrow.png"/>
+                                                <connections>
+                                                    <segue destination="r9H-bo-hKP" kind="show" id="8Hb-3l-AKJ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -187,8 +198,10 @@
                                             <constraint firstAttribute="trailing" secondItem="0tm-Y1-SgC" secondAttribute="trailing" id="97D-Yz-h7Q"/>
                                             <constraint firstItem="a2B-ap-5IC" firstAttribute="top" secondItem="va5-uP-63g" secondAttribute="bottom" constant="8" id="Bt5-1W-N8y"/>
                                             <constraint firstItem="0tm-Y1-SgC" firstAttribute="top" secondItem="11Y-80-2G7" secondAttribute="bottom" constant="15" id="G6M-AX-6Vw"/>
+                                            <constraint firstItem="NhF-5w-wHl" firstAttribute="top" secondItem="NRf-ye-ZUj" secondAttribute="top" constant="35" id="GDQ-T0-Bib"/>
+                                            <constraint firstItem="NhF-5w-wHl" firstAttribute="leading" secondItem="NRf-ye-ZUj" secondAttribute="leading" constant="3" id="HBA-HW-AIg"/>
                                             <constraint firstAttribute="trailing" secondItem="va5-uP-63g" secondAttribute="trailing" id="Ip8-i7-h73"/>
-                                            <constraint firstItem="30b-km-iOT" firstAttribute="top" secondItem="NRf-ye-ZUj" secondAttribute="top" constant="20" id="J4L-Fo-aMQ"/>
+                                            <constraint firstItem="30b-km-iOT" firstAttribute="top" secondItem="NRf-ye-ZUj" secondAttribute="top" constant="35" id="J4L-Fo-aMQ"/>
                                             <constraint firstItem="ooW-2b-d74" firstAttribute="centerX" secondItem="NRf-ye-ZUj" secondAttribute="centerX" id="K3X-4r-51e"/>
                                             <constraint firstItem="ooW-2b-d74" firstAttribute="top" secondItem="2zf-Cz-07S" secondAttribute="bottom" constant="20" id="Nlb-Pb-g6I"/>
                                             <constraint firstItem="Hda-7H-eaC" firstAttribute="leading" secondItem="NRf-ye-ZUj" secondAttribute="leading" id="RmF-nF-lBq"/>
@@ -735,6 +748,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back-arrow.png" width="20" height="20"/>
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
