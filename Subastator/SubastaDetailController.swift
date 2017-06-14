@@ -28,33 +28,24 @@ class SubastaDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-        tituloLabel.text = passedValue._nombre_subasta
-        precioSalidaLabel.text = passedValue._precio_minimo_subasta
-        objetoSubastaLabel.text = passedValue._objeto_subasta
-        subastadorLabel.text = passedValue._creador
-        descripcionText.text = passedValue._descripcion_subasta
-        */
+        
         pujas = ref.child("subastas/"+passedValue._id+"/pujas")
         
         pujas.observe(FIRDataEventType.value, with: { (snapshot) in
             let enumerator = snapshot.children
             if let result = enumerator.allObjects as? [FIRDataSnapshot] {
                 for child in result {
+                    print("--- CHILD ---")
                     print(child)
+
                 }
             }
         })
-
-       /* pujas.observeSingleEvent(of: .value) { (snapshot) in
-            if let result = snapshot.children.allObjects as? [FIRDataSnapshot] {
-                for child in result {
-                    print(child)
-                }
-            }
-        }*/
         
-        
+        tituloLabel.text = passedValue._nombre_subasta
+        objetoSubastaLabel.text = passedValue._objeto_subasta
+        descripcionText.text = passedValue._descripcion_subasta
+        precioSalidaLabel.text = passedValue._precio_minimo_subasta + "€"
     }
 
     override func didReceiveMemoryWarning() {

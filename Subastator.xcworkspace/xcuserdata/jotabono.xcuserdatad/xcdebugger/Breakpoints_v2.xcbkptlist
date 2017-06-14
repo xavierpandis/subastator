@@ -597,11 +597,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Subastator/SubastaDetailController.swift"
-            timestampString = "518986418.74977"
+            timestampString = "519152182.200873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "SubastaDetailController"
             landmarkType = "3">
          </BreakpointContent>
@@ -645,11 +645,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Subastator/SubastaDetailController.swift"
-            timestampString = "518986418.74977"
+            timestampString = "519152182.200873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
