@@ -22,6 +22,8 @@
 		BB0495681EAE841100F56AED /* CellMisSubastasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */; };
 		BB121F0F1ED60187009CC20C /* SubastaDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB121F0E1ED60187009CC20C /* SubastaDetailController.swift */; };
 		BB22EE7F1ED72EE6002ECB8B /* Subasta.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22EE7E1ED72EE6002ECB8B /* Subasta.swift */; };
+		BB4F6B371EF6A97A0061A122 /* backgroundpicture.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4F6B361EF6A97A0061A122 /* backgroundpicture.png */; };
+		BB4F6B391EF6B22F0061A122 /* Puja.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F6B381EF6B22F0061A122 /* Puja.swift */; };
 		BB8E70E71EF1A3E800473136 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8E70E61EF1A3E800473136 /* back-arrow.png */; };
 		BB9044521EC8D4F600C0822C /* VerSubastasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9044511EC8D4F600C0822C /* VerSubastasController.swift */; };
 		BB9044561EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */; };
@@ -74,6 +76,8 @@
 		BB0495671EAE841100F56AED /* CellMisSubastasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellMisSubastasTableViewCell.swift; sourceTree = "<group>"; };
 		BB121F0E1ED60187009CC20C /* SubastaDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubastaDetailController.swift; sourceTree = "<group>"; };
 		BB22EE7E1ED72EE6002ECB8B /* Subasta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subasta.swift; sourceTree = "<group>"; };
+		BB4F6B361EF6A97A0061A122 /* backgroundpicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundpicture.png; sourceTree = "<group>"; };
+		BB4F6B381EF6B22F0061A122 /* Puja.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Puja.swift; sourceTree = "<group>"; };
 		BB8E70E61EF1A3E800473136 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
 		BB9044511EC8D4F600C0822C /* VerSubastasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerSubastasController.swift; sourceTree = "<group>"; };
 		BB9044551EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSubastasTaleViewCell.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				BB121F0E1ED60187009CC20C /* SubastaDetailController.swift */,
 				BB22EE7E1ED72EE6002ECB8B /* Subasta.swift */,
 				BB8E70E61EF1A3E800473136 /* back-arrow.png */,
+				BB4F6B361EF6A97A0061A122 /* backgroundpicture.png */,
+				BB4F6B381EF6B22F0061A122 /* Puja.swift */,
 			);
 			path = Subastator;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4F6B371EF6A97A0061A122 /* backgroundpicture.png in Resources */,
 				A620FB3F1E4CF0B4006FE8EA /* LaunchScreen.storyboard in Resources */,
 				A676BC4A1E70792000104624 /* GoogleService-Info.plist in Resources */,
 				A620FB3C1E4CF0B4006FE8EA /* Assets.xcassets in Resources */,
@@ -485,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4F6B391EF6B22F0061A122 /* Puja.swift in Sources */,
 				BBBE89CC1E96B6AC00F9E51B /* PanelViewController.swift in Sources */,
 				A620FB371E4CF0B4006FE8EA /* SecondViewController.swift in Sources */,
 				BB9044561EC8DF9E00C0822C /* CellSubastasTaleViewCell.swift in Sources */,

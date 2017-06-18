@@ -59,7 +59,7 @@
                                     <outlet property="estado" destination="VMC-ZZ-Gwc" id="jHb-mY-Jqx"/>
                                     <outlet property="nombre" destination="fr9-IN-vFn" id="6db-2x-l9v"/>
                                     <outlet property="precio" destination="ZXY-Lr-16P" id="vGY-kk-Lgr"/>
-                                    <segue destination="Fze-FA-2g9" kind="showDetail" id="8gU-pH-2lR"/>
+                                    <segue destination="Fze-FA-2g9" kind="show" id="JAK-gr-TC0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -68,18 +68,19 @@
                             <outlet property="delegate" destination="5ns-3o-zMZ" id="wtF-bH-LjF"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Subastas" id="le1-ai-Dsx"/>
                     <connections>
                         <outlet property="tablaSubastas" destination="p0Q-jy-3UM" id="kdO-25-2NV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5B-gY-QHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1567" y="-1638"/>
+            <point key="canvasLocation" x="2504.8000000000002" y="-1638.5307346326838"/>
         </scene>
-        <!--Subasta Detail Controller-->
+        <!--Puja-->
         <scene sceneID="lFO-Pb-93f">
             <objects>
-                <viewController id="Fze-FA-2g9" customClass="SubastaDetailController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Puja" id="Fze-FA-2g9" customClass="SubastaDetailController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bIh-iv-4qk"/>
                         <viewControllerLayoutGuide type="bottom" id="Lje-ES-GN9"/>
@@ -112,7 +113,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="190" id="pOk-ws-OxX"/>
                                                 </constraints>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -172,19 +173,7 @@
                                                     <action selector="crearSubasta:" destination="E8F-6p-ZRc" eventType="touchUpInside" id="i46-je-L7c"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhF-5w-wHl">
-                                                <rect key="frame" x="8" y="12" width="47" height="22"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="35" id="CoG-MT-PW3"/>
-                                                    <constraint firstAttribute="height" constant="35" id="ufl-Hp-juz"/>
-                                                </constraints>
-                                                <state key="normal" title="Button" image="back-arrow.png"/>
-                                                <connections>
-                                                    <segue destination="r9H-bo-hKP" kind="show" id="8Hb-3l-AKJ"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="va5-uP-63g" firstAttribute="leading" secondItem="NRf-ye-ZUj" secondAttribute="leading" id="0hK-vL-3Je"/>
                                             <constraint firstItem="a2B-ap-5IC" firstAttribute="leading" secondItem="NRf-ye-ZUj" secondAttribute="leading" id="0uA-YJ-Uvq"/>
@@ -198,8 +187,6 @@
                                             <constraint firstAttribute="trailing" secondItem="0tm-Y1-SgC" secondAttribute="trailing" id="97D-Yz-h7Q"/>
                                             <constraint firstItem="a2B-ap-5IC" firstAttribute="top" secondItem="va5-uP-63g" secondAttribute="bottom" constant="8" id="Bt5-1W-N8y"/>
                                             <constraint firstItem="0tm-Y1-SgC" firstAttribute="top" secondItem="11Y-80-2G7" secondAttribute="bottom" constant="15" id="G6M-AX-6Vw"/>
-                                            <constraint firstItem="NhF-5w-wHl" firstAttribute="top" secondItem="NRf-ye-ZUj" secondAttribute="top" constant="35" id="GDQ-T0-Bib"/>
-                                            <constraint firstItem="NhF-5w-wHl" firstAttribute="leading" secondItem="NRf-ye-ZUj" secondAttribute="leading" constant="3" id="HBA-HW-AIg"/>
                                             <constraint firstAttribute="trailing" secondItem="va5-uP-63g" secondAttribute="trailing" id="Ip8-i7-h73"/>
                                             <constraint firstItem="30b-km-iOT" firstAttribute="top" secondItem="NRf-ye-ZUj" secondAttribute="top" constant="35" id="J4L-Fo-aMQ"/>
                                             <constraint firstItem="ooW-2b-d74" firstAttribute="centerX" secondItem="NRf-ye-ZUj" secondAttribute="centerX" id="K3X-4r-51e"/>
@@ -239,6 +226,7 @@
                             <constraint firstItem="Lje-ES-GN9" firstAttribute="top" secondItem="xVc-eL-KIX" secondAttribute="bottom" id="bTW-68-XFq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Subasta" id="qPd-R4-FQl"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="850"/>
                     <connections>
@@ -252,9 +240,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONX-fq-MQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3304.8000000000002" y="-2114.8425787106448"/>
+            <point key="canvasLocation" x="5183.1999999999998" y="-2114.8425787106448"/>
         </scene>
-        <!--First-->
+        <!--Principal-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController storyboardIdentifier="PanelViewController" id="9pv-A4-QxB" customClass="PanelViewController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
@@ -266,15 +254,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtX-Mo-uHn">
-                                <rect key="frame" x="142" y="637" width="92" height="30"/>
-                                <state key="normal" title="Cerrar sesion"/>
-                                <connections>
-                                    <segue destination="Jnz-mo-qJX" kind="show" id="Q6N-Db-r3F"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbH-bi-AvN">
-                                <rect key="frame" x="145" y="72" width="84" height="21"/>
+                                <rect key="frame" x="145" y="116" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -307,7 +288,7 @@
                                 <rect key="frame" x="130" y="242" width="114" height="30"/>
                                 <state key="normal" title="Ver subastas"/>
                                 <connections>
-                                    <segue destination="5ns-3o-zMZ" kind="show" id="2OD-9G-hYS"/>
+                                    <segue destination="5ns-3o-zMZ" kind="show" id="uNP-Xq-H3A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -324,19 +305,17 @@
                             <constraint firstItem="yQL-OQ-x0j" firstAttribute="top" secondItem="lc1-ze-Zki" secondAttribute="bottom" constant="98" id="eVQ-gh-MDF"/>
                             <constraint firstItem="CBa-Cp-uaI" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="gfp-cQ-mST"/>
                             <constraint firstItem="1i0-xa-Ft9" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="kmC-Qh-wc9"/>
-                            <constraint firstItem="VtX-Mo-uHn" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="oEc-KW-g2y"/>
                             <constraint firstItem="CBa-Cp-uaI" firstAttribute="top" secondItem="fxK-Hf-0hI" secondAttribute="bottom" constant="8" id="pHM-uN-fYh"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="VtX-Mo-uHn" secondAttribute="bottom" id="vuP-uL-vgg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="Principal" id="8bm-sw-kqW"/>
                     <connections>
                         <outlet property="userName" destination="lc1-ze-Zki" id="PFi-aZ-RsA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="-691"/>
+            <point key="canvasLocation" x="1680.8" y="-691.304347826087"/>
         </scene>
         <!--Mis subastas-->
         <scene sceneID="90F-XH-c8U">
@@ -541,7 +520,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTR-Fb-9sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="-803"/>
+            <point key="canvasLocation" x="3111.1999999999998" y="-803.74812593703155"/>
         </scene>
         <!--Creando cuenta-->
         <scene sceneID="B0u-ts-mDt">
@@ -627,10 +606,10 @@
             </objects>
             <point key="canvasLocation" x="-1583" y="958"/>
         </scene>
-        <!--First View Controller-->
+        <!--Login-->
         <scene sceneID="QFJ-0s-PUf">
             <objects>
-                <viewController id="Jnz-mo-qJX" customClass="FirstViewController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginController" id="Jnz-mo-qJX" customClass="FirstViewController" customModule="Subastator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JXC-IX-Lba"/>
                         <viewControllerLayoutGuide type="bottom" id="iLd-0V-rIX"/>
@@ -640,13 +619,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h99-ys-vhe">
-                                <rect key="frame" x="86" y="213" width="203" height="30"/>
+                                <rect key="frame" x="86" y="257" width="203" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conéctate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sk-Oc-Jj6">
-                                <rect key="frame" x="16" y="63" width="343" height="47"/>
+                                <rect key="frame" x="16" y="107" width="343" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" red="1" green="0.71048503707158361" blue="0.00086542638452768994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -654,13 +633,13 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtc-vn-501">
-                                <rect key="frame" x="86" y="252" width="89" height="21"/>
+                                <rect key="frame" x="86" y="296" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7Z-41-uE3">
-                                <rect key="frame" x="86" y="281" width="203" height="30"/>
+                                <rect key="frame" x="86" y="325" width="203" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -673,7 +652,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpe-Gb-M9T">
-                                <rect key="frame" x="86" y="184" width="59" height="21"/>
+                                <rect key="frame" x="86" y="228" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -717,7 +696,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="A7Z-41-uE3" secondAttribute="trailing" constant="70" id="z9Q-Yk-5re"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="65b-zb-kxv"/>
+                    <navigationItem key="navigationItem" title="Login" id="65b-zb-kxv">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="ect-PD-XgA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="condition" destination="5Sk-Oc-Jj6" id="Wv5-0K-dmB"/>
                         <outlet property="password" destination="A7Z-41-uE3" id="Tej-c7-NgY"/>
@@ -746,12 +727,48 @@
             </objects>
             <point key="canvasLocation" x="-1583" y="92"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vFR-gg-snW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T48-za-kuD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0hX-Jx-HhC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5ns-3o-zMZ" kind="relationship" relationship="rootViewController" id="rJa-Hx-C1N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a85-LP-NtC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565.5999999999999" y="-1638.5307346326838"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="2XP-4x-MW3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JN3-GP-GIU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C7j-Zh-TWX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="q8j-iL-8cY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wep-sk-ztU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741.60000000000002" y="-691.304347826087"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="back-arrow.png" width="20" height="20"/>
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Q6N-Db-r3F"/>
+        <segue reference="uNP-Xq-H3A"/>
     </inferredMetricsTieBreakers>
 </document>

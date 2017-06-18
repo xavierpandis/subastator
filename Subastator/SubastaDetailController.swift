@@ -28,17 +28,32 @@ class SubastaDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "backgroundpicture.png")?.draw(in: self.view.bounds)
         
-        pujas = ref.child("subastas/"+passedValue._id+"/pujas")
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         
-        pujas.observe(FIRDataEventType.value, with: { (snapshot) in
-            let enumerator = snapshot.children
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
+        
+        pujas = ref.child("subastas/"+passedValue._id+"/pujas/puja")
+        
+        pujas.observe(FIRDataEventType.value, with: { (snapshot) in let enumerator = snapshot.children
+            while let rest = enumerator.nextObject() as? FIRDataSnapshot {
+                let value = rest.value as? NSDictionary
+                
+                let sub = Puja(dinero: value?["dinero"] as! String, pujador: value?["pujador"] as! String)
+                
+                print("DINERO: \(sub._dinero)")
+                print("PUJADOR: \(sub._pujador)")
+            
+            /*let enumerator = snapshot.children
             if let result = enumerator.allObjects as? [FIRDataSnapshot] {
                 for child in result {
                     print("--- CHILD ---")
                     print(child)
-
-                }
+                }*/
             }
         })
         

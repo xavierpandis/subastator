@@ -45,6 +45,14 @@ class CrearSubastaViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "backgroundpicture.png")?.draw(in: self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
         subastasRef = ref.child("subastas")
         // Do any additional setup after loading the view.
     }
